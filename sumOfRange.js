@@ -16,9 +16,7 @@ function range(start, end) {
 //see whether it does indeed return 55.
 
 function sum(array) {
-    return array.reduce((accumulator, currentValue) => {
-        return accumulator + currentValue
-    }, 0)
+    return array.reduce((acc, currVal) => acc + currVal, 0)
 }
 
 console.log(sum(range(1, 10))) // => 55
